@@ -1,8 +1,8 @@
-package numeroentre1220;
+package numeroEntre12e20;
 
 import java.util.Scanner;
 
-public class NumeroEntre1220 {
+public class NumeroEntre12e20 {
 
     private static Scanner Teclado;
 
@@ -16,7 +16,7 @@ public class NumeroEntre1220 {
         
         if (Numero >= 12 && Numero <= 20) {
             int Escolhido = Numero;
-            System.out.println("O número está correto: " + "" + Escolhido);
+            System.out.println("O número está dentro do intervalo: " + "" + Escolhido);
 
         } else {
             System.out.println("O número está fora do intevalo.");
