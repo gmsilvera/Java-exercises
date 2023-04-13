@@ -1,6 +1,5 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
-}
-{
+    "java.debug.settings.onBuildFailureProceed": true,
     "editor.defaultFormatter": "ilkka.google-java-format",
+
 }
