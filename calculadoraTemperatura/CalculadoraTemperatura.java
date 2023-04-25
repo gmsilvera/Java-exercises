@@ -7,10 +7,10 @@ public class CalculadoraTemperatura {
 
         Temperatura Temperatura = new Temperatura();
 
-//        for (int i = 0; i <= 1; i++) {
+        // for (int i = 0; i <= 1; i++) {
         int i = 0;
         do {
-            int Opcao;
+            int opcao;
             System.out.print("Digite a Conversão desejada: \n"
                     + "1 - Celcius para Fahrenheit: F = C*(1,8) + 32 \n"
                     + "2 - Fahrenheit para Celcius: C = (F − 32) / 1,8 \n"
@@ -19,49 +19,48 @@ public class CalculadoraTemperatura {
                     + "5 - Kelvin para Fahrenheit: F = 1,8(K-273) + 32 \n"
                     + "Qual sua opção? ");
 
-            Opcao = new Scanner(System.in).nextInt();
+            opcao = new Scanner(System.in).nextInt();
 
-            double ValorCalcular, Resultado = 0;
+            double valorCalcular, Resultado = 0;
             System.out.print("Digite o valor a Converter: ");
-            ValorCalcular = new Scanner(System.in).nextDouble();
+            valorCalcular = new Scanner(System.in).nextDouble();
 
-            switch (Opcao) {
+            switch (opcao) {
                 case 1:
-                    Resultado = Temperatura.CelsiusFahrenheit(ValorCalcular);
+                    Resultado = Temperatura.CelsiusFahrenheit(valorCalcular);
                     break;
                 case 2:
-                    Resultado = Temperatura.FahrenheitCelsius(ValorCalcular);
+                    Resultado = Temperatura.FahrenheitCelsius(valorCalcular);
 
                     break;
                 case 3:
-                    Resultado = Temperatura.KelvinCelsius(ValorCalcular);
+                    Resultado = Temperatura.KelvinCelsius(valorCalcular);
 
                     break;
                 case 4:
-                    Resultado = Temperatura.CelsiusKelvin(ValorCalcular);
+                    Resultado = Temperatura.CelsiusKelvin(valorCalcular);
 
                     break;
                 case 5:
-                    Resultado = Temperatura.KelvinFahrenheit(ValorCalcular);
+                    Resultado = Temperatura.KelvinFahrenheit(valorCalcular);
                     break;
 
                 default:
                     System.out.println("Erro");
             }
             System.out.print("O RESULTADO É: " + Resultado + "\n");
-            
-            
+
             System.out.println("Deseja continuar? digite i! ");
-            
+
             i++;
 
         } while (i < 3);
 
-//            int novamente;
-//            novamente = new Scanner(System.in).nextInt();
-//            if(novamente == 9){
-//                i--;
-//            }
-//        }
+        // int novamente;
+        // novamente = new Scanner(System.in).nextInt();
+        // if(novamente == 9){
+        // i--;
+        // }
+        // }
     }
 }
